@@ -1,27 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Magician Essen favicon">
   <rect width="512" height="512" rx="112" fill="#14141c"/>
 
-  <!-- Top hat + wand (simple, readable at small sizes) -->
-  <g fill="none" stroke="#eab308" stroke-width="20" stroke-linecap="round" stroke-linejoin="round">
-    <!-- Hat brim -->
-    <path d="M140 320c32 26 200 26 232 0" />
-    <path d="M132 332c40 36 224 36 264 0" opacity="0.85" />
-
-    <!-- Hat body -->
-    <path d="M190 320V208c0-18 14-32 32-32h68c18 0 32 14 32 32v112" />
-    <path d="M190 232h164" opacity="0.65" />
-
-    <!-- Wand (diagonal) -->
-    <path d="M330 160L414 84" />
-  </g>
-
-  <!-- Wand tip (filled) -->
+  <!-- Simple top hat silhouette (best readability at tab size) -->
   <g fill="#eab308">
-    <circle cx="420" cy="78" r="10" />
+    <!-- Hat crown -->
+    <rect x="178" y="156" width="156" height="178" rx="24"/>
+    <!-- Hat band (cutout effect via darker overlay) -->
+    <rect x="178" y="232" width="156" height="42" rx="18" fill="#14141c" opacity="0.35"/>
+    <!-- Brim -->
+    <path d="M120 340c44-26 228-26 272 0 10 6 8 20-4 24-66 22-194 22-260 0-12-4-14-18-4-24z"/>
 
-    <!-- Sparkles -->
-    <path d="M394 126l8 18 18 8-18 8-8 18-8-18-18-8 18-8 8-18z" opacity="0.9"/>
-    <path d="M128 164l6 14 14 6-14 6-6 14-6-14-14-6 14-6 6-14z" opacity="0.65"/>
-    <path d="M156 392l7 16 16 7-16 7-7 16-7-16-16-7 16-7 7-16z" opacity="0.5"/>
+    <!-- Single sparkle -->
+    <path d="M378 140l8 18 18 8-18 8-8 18-8-18-18-8 18-8 8-18z" opacity="0.9"/>
   </g>
 </svg>
