@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion";
 
-// Placeholder: replace with your real YouTube/Vimeo embed URL
-const DEMO_VIDEO_URL = "https://www.youtube.com/embed/dQw4w9WgXcQ"; // example
+// Self-hosted: put your video file at public/demo.mp4 (under 100 MB). Served from your domain so it works everywhere (e.g. China).
+const DEMO_VIDEO_SRC = "/demo.mp4";
 
 export default function Demo() {
   return (
@@ -36,27 +36,22 @@ export default function Demo() {
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.5, delay: 0.15 }}
         >
-          <iframe
-            src={DEMO_VIDEO_URL}
+          <video
+            src={DEMO_VIDEO_SRC}
+            className="h-full w-full object-cover"
+            controls
+            playsInline
+            preload="metadata"
+            poster=""
             title="Magician Essen demo"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="h-full w-full"
-          />
+          >
+            Your browser does not support the video tag.
+          </video>
         </motion.div>
 
-        <motion.p
-          className="mt-6 text-center text-sm text-zinc-500"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-        >
-          Drop your performance reel here—update the video URL in{" "}
-          <code className="rounded bg-white/10 px-1.5 py-0.5 text-zinc-400">
-            components/Demo.tsx
-          </code>{" "}
-          when ready (YouTube or Vimeo).
-        </motion.p>
+        <p className="mt-6 text-center text-sm text-zinc-500">
+          Add your reel as <code className="rounded bg-white/10 px-1.5 py-0.5 text-zinc-400">public/demo.mp4</code> (under 100 MB). Served from magicianessen.com so it plays everywhere.
+        </p>
       </div>
     </section>
   );
