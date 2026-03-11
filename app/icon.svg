@@ -1,16 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Magician Essen favicon">
   <rect width="512" height="512" rx="112" fill="#14141c"/>
 
-  <!-- Simple top hat silhouette (best readability at tab size) -->
-  <g fill="#eab308">
-    <!-- Hat crown -->
-    <rect x="178" y="156" width="156" height="178" rx="24"/>
-    <!-- Hat band (cutout effect via darker overlay) -->
-    <rect x="178" y="232" width="156" height="42" rx="18" fill="#14141c" opacity="0.35"/>
-    <!-- Brim -->
-    <path d="M120 340c44-26 228-26 272 0 10 6 8 20-4 24-66 22-194 22-260 0-12-4-14-18-4-24z"/>
+  <!-- 45° wand (high contrast, premium silver) -->
+  <defs>
+    <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="0.5" stop-color="#e5e7eb"/>
+      <stop offset="1" stop-color="#cbd5e1"/>
+    </linearGradient>
+  </defs>
 
-    <!-- Single sparkle -->
-    <path d="M378 140l8 18 18 8-18 8-8 18-8-18-18-8 18-8 8-18z" opacity="0.9"/>
+  <g transform="translate(256 256) rotate(-35) translate(-256 -256)">
+    <!-- Wand body -->
+    <rect x="132" y="242" width="260" height="28" rx="14" fill="url(#silver)"/>
+    <!-- Wand handle wrap -->
+    <rect x="132" y="242" width="96" height="28" rx="14" fill="#94a3b8" opacity="0.55"/>
+    <path d="M158 242v28M186 242v28M214 242v28" stroke="#0b0b10" stroke-opacity="0.28" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Wand tip -->
+    <circle cx="404" cy="256" r="10" fill="#f8fafc"/>
+    <circle cx="404" cy="256" r="18" fill="#f8fafc" opacity="0.12"/>
+  </g>
+
+  <!-- Sparkles near the tip -->
+  <g fill="#f8fafc" opacity="0.9">
+    <path d="M396 142l8 18 18 8-18 8-8 18-8-18-18-8 18-8 8-18z"/>
+  </g>
+  <g fill="#cbd5e1" opacity="0.65">
+    <path d="M120 180l6 14 14 6-14 6-6 14-6-14-14-6 14-6 6-14z"/>
   </g>
 </svg>
