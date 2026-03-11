@@ -16,6 +16,7 @@ export default function ContactForm() {
   );
   const [formData, setFormData] = useState({
     name: "",
+    contact: "",
     date: "",
     location: "",
     guestCount: "",
@@ -45,6 +46,7 @@ export default function ContactForm() {
       setStatus("success");
       setFormData({
         name: "",
+        contact: "",
         date: "",
         location: "",
         guestCount: "",
@@ -99,6 +101,21 @@ export default function ContactForm() {
               onChange={handleChange}
               className="mt-2 w-full rounded-xl border border-white/10 bg-[var(--color-surface)] px-4 py-3 text-white placeholder-zinc-500 focus:border-[var(--color-accent)] focus:outline-none focus:ring-1 focus:ring-[var(--color-accent)]"
               placeholder="Your name"
+            />
+          </div>
+          <div>
+            <label htmlFor="contact" className="block text-sm font-medium text-zinc-300">
+              How to reach you *
+            </label>
+            <input
+              id="contact"
+              name="contact"
+              type="text"
+              required
+              value={formData.contact}
+              onChange={handleChange}
+              className="mt-2 w-full rounded-xl border border-white/10 bg-[var(--color-surface)] px-4 py-3 text-white placeholder-zinc-500 focus:border-[var(--color-accent)] focus:outline-none focus:ring-1 focus:ring-[var(--color-accent)]"
+              placeholder="Email, phone number, or WeChat ID"
             />
           </div>
           <div>

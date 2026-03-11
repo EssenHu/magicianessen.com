@@ -4,8 +4,8 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
-  { label: "Services", href: "#services" },
   { label: "Watch Demo", href: "#demo" },
+  { label: "Services", href: "#services" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -39,7 +39,7 @@ export default function Header() {
               href="#contact"
               className="rounded-full bg-[var(--color-accent)] px-5 py-2.5 text-sm font-semibold text-[var(--color-bg)] transition hover:bg-[var(--color-accent-hover)]"
             >
-              Book Now
+              Get in Touch
             </a>
           </li>
         </ul>
@@ -90,7 +90,7 @@ export default function Header() {
                   onClick={() => setMobileOpen(false)}
                   className="mt-2 block rounded-full bg-[var(--color-accent)] px-5 py-3 text-center font-semibold text-[var(--color-bg)]"
                 >
-                  Book Now
+                  Get in Touch
                 </a>
               </li>
             </ul>

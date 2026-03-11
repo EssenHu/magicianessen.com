@@ -2,8 +2,9 @@
 
 import { motion } from "framer-motion";
 
-// Self-hosted: put your video file at public/demo.mp4 (under 100 MB). Served from your domain so it works everywhere (e.g. China).
 const DEMO_VIDEO_SRC = "/demo.mp4";
+// Optional thumbnail: add public/demo-poster.jpg (e.g. a frame from your video) to show before play
+const DEMO_POSTER = "/demo-poster.jpg";
 
 export default function Demo() {
   return (
@@ -25,8 +26,8 @@ export default function Demo() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.5, delay: 0.08 }}
         >
-          Shots from different performances—a taste of the energy and style you
-          can expect at your event.
+          Highlights from past performances and audience reactions—a taste of the
+          energy and style you can expect at your event.
         </motion.p>
 
         <motion.div
@@ -42,16 +43,12 @@ export default function Demo() {
             controls
             playsInline
             preload="metadata"
-            poster=""
+            poster={DEMO_POSTER}
             title="Magician Essen demo"
           >
             Your browser does not support the video tag.
           </video>
         </motion.div>
-
-        <p className="mt-6 text-center text-sm text-zinc-500">
-          Add your reel as <code className="rounded bg-white/10 px-1.5 py-0.5 text-zinc-400">public/demo.mp4</code> (under 100 MB). Served from magicianessen.com so it plays everywhere.
-        </p>
       </div>
     </section>
   );
