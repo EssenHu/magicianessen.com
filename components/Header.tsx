@@ -7,7 +7,6 @@ const navLinks = [
   { label: "Watch Demo", href: "#demo" },
   { label: "Meet Essen", href: "#profile" },
   { label: "Services", href: "#services" },
-  { label: "Contact", href: "#contact" },
 ];
 
 export default function Header() {
