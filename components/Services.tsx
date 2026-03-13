@@ -4,21 +4,21 @@ import { motion } from "framer-motion";
 
 const services = [
   {
-    title: "Corporate Events",
+    title: "Corporate Events & Galas",
     description:
-      "Engage your team and clients with close-up magic and stage performances tailored for conferences, galas, and company celebrations.",
+      "High-impact magic for corporate events, gala shows, and VIP evenings—ideal for receptions, award nights, and team celebrations.",
     icon: "◆",
   },
   {
-    title: "Private Parties",
+    title: "Private Parties & Weddings",
     description:
-      "Birthdays, anniversaries, and special occasions—bring wonder and laughter to your guests with personalized, high-energy magic.",
+      "Interactive magic for private parties, weddings, and adult gatherings—bringing your guests together with shared moments of surprise and laughter.",
     icon: "◆",
   },
   {
-    title: "Weddings",
+    title: "Family & Public Shows",
     description:
-      "Elegant, memorable entertainment for your big day. From cocktail hour walk-around to a featured performance that your guests will remember.",
+      "Family-friendly performances for kids’ birthday parties, art festivals, community events, and store promotions—visual, playful magic that entertains all ages.",
     icon: "◆",
   },
 ];
@@ -43,8 +43,8 @@ export default function Services() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.5, delay: 0.08 }}
         >
-          Professional magic tailored to your event—fun, energetic, and always
-          polished.
+          Professional, interactive magic tailored to your event—from kids&apos;
+          birthdays and private parties to gala shows and corporate celebrations.
         </motion.p>
 
         <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">

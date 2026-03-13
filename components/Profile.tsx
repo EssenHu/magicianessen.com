@@ -51,22 +51,32 @@ export default function Profile() {
             transition={{ duration: 0.5, delay: 0.15 }}
           >
             <p className="text-lg leading-relaxed">
-              Essen is a Bay Area magician known for interactive performances
-              that combine modern magic with humor and audience participation. His
-              goal is simple: to create a show where people relax, laugh, and
-              genuinely enjoy the experience together.
+              Essen is a Bay Area magician known for highly interactive
+              performances where the audience becomes part of the magic. Rather
+              than simply watching from their seats, guests are invited to
+              participate, laugh, and share in the moments of surprise together.
             </p>
             <p className="leading-relaxed">
-              He performs in English and Mandarin, and customizes each show for
-              the audience — from adults-only events and corporate gatherings to
-              family celebrations, children&apos;s parties, weddings, and
-              birthdays.
+              Blending modern magic with humor and audience participation, his
+              shows are designed to create a lively and engaging atmosphere for
+              every event.
             </p>
             <p className="leading-relaxed">
-              Essen also adapts his performance to the venue, whether it&apos;s
-              an intimate close-up setting, a private event space, or a large
-              theater stage. Each show is tailored to fit the atmosphere, the
-              audience, and the occasion.
+              Essen performs in{" "}
+              <span className="font-semibold text-[var(--color-accent)]">
+                English and Mandarin
+              </span>
+              , and tailors each show to the audience — from corporate events
+              and adult gatherings to family celebrations, children&apos;s
+              parties, weddings, and birthdays.
+            </p>
+            <p className="leading-relaxed">
+              His performances adapt to any venue, from intimate close-up magic
+              to full stage shows, always maintaining the same focus:{" "}
+              <span className="font-semibold text-[var(--color-accent)]">
+                bringing the audience into the magic and making them part of the
+                experience.
+              </span>
             </p>
           </motion.div>
         </div>

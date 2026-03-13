@@ -34,7 +34,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
         >
-          Premium magic & entertainment for Bay Area events
+          Interactive magic where your guests become part of the show
         </motion.p>
         <motion.p
           className="mt-2 text-base text-zinc-500 sm:text-lg"
@@ -42,15 +42,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.25, ease: "easeOut" }}
         >
-          Corporate · Private parties · Weddings
-        </motion.p>
-        <motion.p
-          className="mt-1 text-sm text-zinc-600"
-          initial={{ opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
-        >
-          English & Mandarin
+          Bay Area events · Corporate · Private · Family-friendly
         </motion.p>
 
         <motion.div
