@@ -44,6 +44,14 @@ export default function Hero() {
         >
           Corporate · Private parties · Weddings
         </motion.p>
+        <motion.p
+          className="mt-1 text-sm text-zinc-600"
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
+        >
+          English & Mandarin
+        </motion.p>
 
         <motion.div
           className="mt-10 flex flex-wrap items-center justify-center gap-4"

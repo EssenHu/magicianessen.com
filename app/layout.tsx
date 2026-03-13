@@ -21,7 +21,7 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "Magician Essen | Bay Area Magic & Entertainment",
   description:
-    "Professional magician for corporate events, private parties, and weddings in the Bay Area. Fun, energetic performances with a luxury touch.",
+    "Bay Area magician for corporate events, private parties, and weddings. Fun, engaging magic in English and Mandarin. Premium entertainment your guests will remember.",
 };
 
 export default function RootLayout({

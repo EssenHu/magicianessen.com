@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
-import Services from "@/components/Services";
 import Demo from "@/components/Demo";
+import Profile from "@/components/Profile";
+import Services from "@/components/Services";
 import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
     <main>
       <Hero />
       <Demo />
+      <Profile />
       <Services />
       <ContactForm />
       <footer className="border-t border-white/5 py-8 text-center text-sm text-zinc-500">
