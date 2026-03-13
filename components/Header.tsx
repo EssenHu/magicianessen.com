@@ -40,7 +40,7 @@ export default function Header() {
               href="#contact"
               className="rounded-full bg-[var(--color-accent)] px-5 py-2.5 text-sm font-semibold text-[var(--color-bg)] transition hover:bg-[var(--color-accent-hover)]"
             >
-              Get in Touch
+              Check Availability
             </a>
           </li>
         </ul>
@@ -91,7 +91,7 @@ export default function Header() {
                   onClick={() => setMobileOpen(false)}
                   className="mt-2 block rounded-full bg-[var(--color-accent)] px-5 py-3 text-center font-semibold text-[var(--color-bg)]"
                 >
-                  Get in Touch
+                  Check Availability
                 </a>
               </li>
             </ul>

@@ -55,7 +55,7 @@ export default function Hero() {
             href="#contact"
             className="rounded-full bg-[var(--color-accent)] px-8 py-4 text-base font-semibold text-[var(--color-bg)] shadow-lg shadow-amber-500/20 transition hover:bg-[var(--color-accent-hover)] hover:shadow-amber-500/30"
           >
-            Get in Touch
+            Check Availability
           </a>
           <a
             href="#demo"
